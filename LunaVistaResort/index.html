@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAUHAO Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">MAUHAO Resort😸</a>
+    <nav aria-label="Primary">
+      <ul class="menu">   
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Aboutus.html">About MAUHAO</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="sign.avif"
+      aria-label="Aerial view of a tropical beach resort">
+      <source src="https://cdn.coverr.co/videos/coverr-relaxing-by-the-sea-5587/1080p.mp4" type="video/mp4">
+    </video>
+    <div class="hero-shade" aria-hidden="true"></div>
+
+    <section class="login-card" aria-label="Member login">
+      <h1>Log In to MAOHAU😸</h1>
+      <p>Sign in to view room rates, travel dates, and your itinerary.</p>
+      <form action="homepage.html" class="login-form" id="loginForm" method="GET">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>This is Web Development Sample by BossKramAteru</p>
+  </footer>
+
+  <script src="reserv.js"></script>
+</body>
+</html>
