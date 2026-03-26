@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAUHAO | Home</title>
+        <link rel="stylesheet" href="Log MAUHAO.css">
+    </head>
+
+<body>
+
+    <header>        
+        <a class="brand" href="Log MAUHAO.html">
+        <img src="logo.png" class="logo">
+        MAUHAO🐱
+        </a>
+
+        <nav>
+            <a href="MAUHAO meals.html">Meals</a>
+            <a href="Log MAUHAO.html">Billing</a>
+            <a href="MAUHAO plan.html">Plans</a>
+            <a href="MAUHAO nutrients.html">Nutrients</a>
+        </nav>
+
+        <button onclick="openLogin()">Login</button>
+    </header>
+
+
+    <section class="gallery">
+        <h2>Food Gallery</h2>
+
+        <div class="foods">
+            <div class="card">
+            <img src="bbq.webp">
+            <p>BBQ</p>
+        </div>
+
+        <div class="card">
+            <img src="chicken.jpg">
+            <p>Fried Chicken</p>
+        </div>
+
+        <div class="card">
+            <img src="letchon.jpg">
+            <p>Lechon Kawali</p>
+        </div>
+
+        <div class="card">
+            <img src="letchonmanok.jpg">
+            <p>Lechon Manok</p>
+        </div>
+
+        <div class="card">
+            <img src="nuggets.avif">
+            <p>Chicken Nuggets</p>
+        </div>
+
+        <div class="card">
+            <img src="fish.jpg">
+            <p>Fish Fillet</p>
+        </div>
+    </section>
+
+
+    <div id="loginDrawer" class="drawer">
+
+        <span class="close" onclick="closeLogin()">✖</span>
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <button class="loginBtn" onclick="login()">Login</button>
+
+    </div>
+
+
+    <script>
+        function openLogin(){
+        document.getElementById("loginDrawer").style.right = "0";
+        }
+
+        function closeLogin(){
+        document.getElementById("loginDrawer").style.right = "-350px";
+        }
+
+        function login(){
+        alert("Successfully Logged In!");
+        }
+    </script>
+
+</body>
+</html>

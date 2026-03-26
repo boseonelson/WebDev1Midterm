@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plans | MAUHAO</title>
+        <link rel="stylesheet" href="Log MAUHAO.css">
+    </head>
+
+<body>
+
+    <header>        
+        <a class="brand" href="Log MAUHAO.html">
+        <img src="logo.png" class="logo">
+        MAUHAO🐱
+        </a>
+
+        <nav>
+            <a href="MAUHAO meals.html">Meals</a>
+            <a href="Log MAUHAO.html">Billing</a>
+            <a href="MAUHAO plan.html">Plans</a>
+            <a href="MAUHAO nutrients.html">Nutrients</a>
+        </nav>
+
+        <button onclick="openLogin()">Login</button>
+    </header>
+
+
+    <section class="gallery">
+        <h2>Meal Plans</h2>
+
+        <div class="foods">
+            <div class="card">
+                <h3>Single Meal Plan</h3>
+                <p>Choose one meal from our menu such as BBQ, Fried Chicken, or Fish Fillet.</p>
+                <p><strong>Starting at ₱120</strong></p>
+            </div>
+
+            <div class="card">
+                <h3>Family Meal Plan</h3>
+                <p>A bigger meal set with multiple dishes like Lechon Manok, Chicken Nuggets, and BBQ.</p>
+                <p><strong>₱450 - ₱700</strong></p>
+            </div>
+
+            <div class="card">
+                <h3>Weekly Meal Plan</h3>
+                <p>Get different meals every day for one week including our best sellers.</p>
+                <p><strong>₱900 / week</strong></p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="loginDrawer" class="drawer">
+        <span class="close" onclick="closeLogin()">✖</span>
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <button class="loginBtn" onclick="login()">Login</button>
+    </div>
+
+
+    <script>
+
+        function openLogin(){
+        document.getElementById("loginDrawer").style.right = "0";
+        }
+
+        function closeLogin(){
+        document.getElementById("loginDrawer").style.right = "-350px";
+        }
+
+        function login(){
+        alert("Successfully Logged In!");
+        }
+    </script>
+
+</body>
+</html>

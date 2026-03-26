@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrients | MAUHAO</title>
+        <link rel="stylesheet" href="Log MAUHAO.css">
+    </head>
+
+<body>
+
+    <header>        
+        <a class="brand" href="Log MAUHAO.html">
+        <img src="logo.png" class="logo">
+        MAUHAO🐱
+        </a>
+
+        <nav>
+            <a href="MAUHAO meals.html">Meals</a>
+            <a href="Log MAUHAO.html">Billing</a>
+            <a href="MAUHAO plan.html">Plans</a>
+            <a href="MAUHAO nutrients.html">Nutrients</a>
+        </nav>
+
+        <button onclick="openLogin()">Login</button>
+    </header>
+
+
+    <section class="gallery">
+
+        <h2>Nutritional Information</h2>
+
+        <div class="foods">
+            <div class="card">
+            <h3>Protein</h3>
+            <p>Helps build and repair muscles.</p>
+            <p>Found in chicken, fish fillet, and chicken nuggets.</p>
+        </div>
+
+        <div class="card">
+            <h3>Healthy Fats</h3>
+            <p>Provides energy and supports body functions.</p>
+            <p>Found in lechon kawali and BBQ.</p>
+        </div>
+
+        <div class="card">
+            <h3>Iron</h3>
+            <p>Helps carry oxygen in the blood.</p>
+            <p>Found in pork dishes like lechon kawali and BBQ.</p>
+        </div>
+
+        <div class="card">
+            <h3>Vitamin B</h3>
+            <p>Helps convert food into energy.</p>
+            <p>Found in chicken and pork meals.</p>
+        </div>
+
+        <div class="card">
+            <h3>Omega-3</h3>
+            <p>Supports heart and brain health.</p>
+            <p>Found in fish fillet.</p>
+        </div>
+
+        <div class="card">
+            <h3>Calories</h3>
+            <p>Provides energy for daily activities.</p>
+            <p>All meals contain calories depending on portion size.</p>
+        </div>
+    </section>
+
+
+    <div id="loginDrawer" class="drawer">
+        <span class="close" onclick="closeLogin()">✖</span>
+
+        <h2>Login</h2>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <button class="loginBtn" onclick="login()">Login</button>
+
+    </div>
+
+
+    <script>
+
+        function openLogin(){
+        document.getElementById("loginDrawer").style.right = "0";
+        }
+
+        function closeLogin(){
+        document.getElementById("loginDrawer").style.right = "-350px";
+        }
+
+        function login(){
+        alert("Successfully Logged In!");
+        }
+
+    </script>
+
+</body>
+</html>
