@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password | MAUHAOCart 😼</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+
+            <div class="brand">
+                <div class="logo-icon">😼</div>
+                    <h1>MAUHAO<span>Cart</span></h1>
+                    <p>Reset your Password</p>
+            </div>
+
+            <form onsubmit="showMessage(event)">
+                <div class="input-group">
+                    <input type="email" name="email" required placeholder="Enter your email">
+                </div>
+            
+            <button type="submit" class="login-btn">Send reset link</button>
+            </form>
+
+            <p id="message" style="color: rgb(84, 4, 121);"></p>
+
+            <script>
+                function showMessage(event) {
+                    event.preventDefault(); 
+                    document.getElementById("message").innerText =
+                    "If this email exists, a reset link has been sent in your Google Account 😼.";
+                }
+            </script>
+
+            <div class="footer-links">
+                <a href="login page.html">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | MAUHAOCart😼</title>
+    <link rel="stylesheet" href="register.css">
+</head> 
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+
+            <div class="brand">
+                <div class="logo-icon">😼</div>
+                    <h1>MAUHAO<span>Cart</span></h1>
+            </div>
+
+            <h2> Sign Up</h2>
+            <form onsubmit="showMessage(event)">
+                <div class="input-group">
+                    <input type="username" name="username" required placeholder="Enter your username">
+                    <input type="email" name="email" required placeholder="Enter your email">
+                    <input type="password" name="password" required placeholder="Enter your password">
+                    <input type="password" name="confirmpassword" required placeholder="Enter your confirmpassword">
+                </div>
+            
+            <button type="submit" class="login-btn"> You Create a new Account</button>
+            </form>
+
+            <p id="message" style="color: rgb(87, 26, 116);"></p>
+
+            <script>
+                function showMessage(event) {
+                    event.preventDefault(); 
+                    document.getElementById("message").innerText =
+                    "You Been Create a new Account 😼.";
+                }
+        </script>
+
+        <div class="footer-links">
+                <a href="login page.html">Back to Login</a>
+    </div>
+            
+
+    
+</body>
+</html>
