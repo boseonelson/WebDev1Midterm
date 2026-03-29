@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <title>MUAHAO Events</title>
+    <link rel="stylesheet" href="MAUHAO.css">
+</head>
+<body>
+
+    <button class="buy-btn top">BUY TICKETS</button>
+
+    <div class="container">
+        <h1>MUAHAO EVENTS</h1>
+        <p class="tagline">Experience the Moment. Own the Night.</p>
+
+        <div class="section">
+            <h2>Select Event</h2>
+            <select id="event">
+                <option>Live Concert</option>
+                <option>Tech Conference</option>
+                <option>Exclusive Party</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>Choose Ticket Tier</h2>
+            <select id="ticket">
+                <option>General Admission</option>
+                <option>VIP Access</option>
+                <option>All-Access Pass</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>Attendee Info</h2>
+            <input type="text" id="name" placeholder="Your Name">
+        </div>
+
+        <div class="section">
+            <h2>QR Code</h2>
+            <div id="qr">Your QR will appear here</div>
+        </div>
+    </div>
+
+    <button class="buy-btn bottom" onclick="generateQR()">BUY NOW</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
